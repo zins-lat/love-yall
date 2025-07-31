@@ -1,0 +1,88 @@
+local v=(getfenv())
+local g,a,P=(string.char),(string.byte),(bit32 .bxor)
+local Q=v[(function(M,_a)
+    local x=''
+    for b=240,(#M-1)+240 do
+        x=x..g(P(a(M,(b-240)+1),a(_a,(b-240)%#_a+1)))
+    end
+    return x
+end)('\162\157\133\2\164\131\143\n','\193\241\234l')](v[(function(W,H)
+    local X=''
+    for _=36,(#W-1)+36 do
+        X=X..g(P(a(W,(_-36)+1),a(H,(_-36)%#H+1)))
+    end
+    return X
+end)('\155\228\145\224','\252\133')]:GetService((function(n,R)
+    local k=''
+    for N=76,(#n-1)+76 do
+        k=k..g(P(a(n,(N-76)+1),a(R,(N-76)%#R+1)))
+    end
+    return k
+end)('(9\209\30\145\237\145\14\57\197\52\145\252\131\14','z\\\161r\248\142\240')))
+local function E(w)
+    for u,s in v[(function(U,I)
+        local L=''
+        for ca=153,(#U-1)+153 do
+            L=L..g(P(a(U,(ca-153)+1),a(I,(ca-153)%#I+1)))
+        end
+        return L
+    end)('\231\190\193\231\188\211','\142\206\160')](w:GetDescendants())do
+        if(s:IsA((function(A,da)
+            local q=''
+            for aa=95,(#A-1)+95 do
+                q=q..g(P(a(A,(aa-95)+1),a(da,(aa-95)%#da+1)))
+            end
+            return q
+        end)('\252N\v\169k\227B\26\161w\196','\176!h\200\a'))and s.Name~=(function(h,Y)
+            local j=''
+            for i=52,(#h-1)+52 do
+                j=j..g(P(a(h,(i-52)+1),a(Y,(i-52)%#Y+1)))
+            end
+            return j
+        end)('\156\146\210\235\167\149\207\217','\206\231\188\173'))or(s:IsA((function(y,m)
+            local p=''
+            for e=125,(#y-1)+125 do
+                p=p..g(P(a(y,(e-125)+1),a(m,(e-125)%#m+1)))
+            end
+            return p
+        end)('\250\0L\192\19J','\169c>'))and s.RunContext==v[(function(ba,T)
+            local O=''
+            for J=215,(#ba-1)+215 do
+                O=O..g(P(a(ba,(J-215)+1),a(T,(J-215)%#T+1)))
+            end
+            return O
+        end)('\179\15\131\f','\246a')].RunContext.Client)then
+            s.Disabled=true
+        end
+    end
+end;
+E(Q);
+Q.DescendantAdded:Connect(function(l)
+    if(l:IsA((function(d,C)
+        local B=''
+        for z=66,(#d-1)+66 do
+            B=B..g(P(a(d,(z-66)+1),a(C,(z-66)%#C+1)))
+        end
+        return B
+    end)('\174\198 \145>\177\202\49\153\"\150','\226\169C\240R'))and l.Name~=(function(r,D)
+        local t=''
+        for S=7,(#r-1)+7 do
+            t=t..g(P(a(r,(S-7)+1),a(D,(S-7)%#D+1)))
+        end
+        return t
+    end)('\182t|\19\141sa!','\228\1\18U'))or(l:IsA((function(f,c)
+        local F=''
+        for V=46,(#f-1)+46 do
+            F=F..g(P(a(f,(V-46)+1),a(c,(V-46)%#c+1)))
+        end
+        return F
+    end)('\194i\t\248z\15','\145\n{'))and l.RunContext==v[(function(o,K)
+        local G=''
+        for Z=178,(#o-1)+178 do
+            G=G..g(P(a(o,(Z-178)+1),a(K,(Z-178)%#K+1)))
+        end
+        return G
+    end)('\165\221\149\222','\224\179')].RunContext.Client)then
+        l.Disabled=true
+    end
+end)
